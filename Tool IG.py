@@ -11,7 +11,6 @@ def silent_public_request(self, url, data=None, params=None, headers=None):
     except Exception:
         return None
 
-
 Client.public_request = silent_public_request
 
 cl = Client()
@@ -86,3 +85,5 @@ if thread_encontrado:
         print(f"[{timestamp}] {sender_username}: {text}")
 else:
     print(f"\nNo se encontró una conversación con '{nombre_buscado}'.")
+
+input("\nPresiona cualquier tecla para salir...")
